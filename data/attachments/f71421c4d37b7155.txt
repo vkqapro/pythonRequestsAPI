@@ -1,0 +1,2 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.trello.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "DELETE /1/boards/679e8db92e6d4fe6139d1c9a HTTP/1.1" 404 37

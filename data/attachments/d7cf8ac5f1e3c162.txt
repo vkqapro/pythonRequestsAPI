@@ -1,0 +1,2 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.trello.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "POST /1/boards/%7B%0A%20%20%20%20%22list_id%22:%20%22679e8dba5956864ef09119e2%22,%0A%20%20%20%20%22board_id%22:%20%22679e8db92e6d4fe6139d1c9a%22,%0A%20%20%20%20%22list_name%22:%20%22NewAPIList%22,%0A%20%20%20%20%22card_id%22:%20%22679e8dba18b91c9656d01acd%22,%0A%20%20%20%20%22list_2_id%22:%20%22679e8dbae674135d2e0d937a%22%0A%7D/lists?name=NewAPIList HTTP/1.1" 404 0
