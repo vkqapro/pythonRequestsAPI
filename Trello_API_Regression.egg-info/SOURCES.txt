@@ -9,4 +9,9 @@ src/credentials/__init__.py
 src/credentials/credentials.py
 src/helpers/__init__.py
 src/helpers/requests_API.py
+tests/BaseTest.py
+tests/__init__.py
 tests/test_healthcheck.py
+tests/regression/__init__.py
+tests/regression/test_TrelloAPI_Regression.py
+tests/test_data/__init__.py
