@@ -1,0 +1,2 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.trello.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "POST /1/boards?name=NewBoardAPI&key=9b59788d895cb44befa2d41d42185d11&token=85c2f2975b674562ee1b1d077c607429e46c19a211060d961196918566e71f57 HTTP/1.1" 401 11

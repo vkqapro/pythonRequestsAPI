@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","120","Create a board","tests.regression","Sat Feb 01 21:20:58 UTC 2025","failed","Sat Feb 01 21:20:59 UTC 2025","TestTrelloRegressionAPI","Trello API Regression - Python Requests with Pytest and Allure reports","",""
+"","144","Create a board","tests.regression","Sat Feb 01 21:25:51 UTC 2025","failed","Sat Feb 01 21:25:52 UTC 2025","TestTrelloRegressionAPI","Trello API Regression - Python Requests with Pytest and Allure reports","",""
