@@ -28,8 +28,8 @@ jobs:
 
       - name: Run tests
         env:
-          APIKey: ${{ secrets.APIKEY }}
-          APIToken: ${{ secrets.APITOKEN }}
+          APIKEY: ${{ secrets.APIKEY }}
+          APITOKEN: ${{ secrets.APITOKEN }}
 #          SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: |
           pytest -m TC001 --alluredir allure-results

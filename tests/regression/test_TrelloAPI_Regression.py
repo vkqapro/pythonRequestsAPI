@@ -16,7 +16,6 @@ board_data_root = 'tests/test_data/board_data.txt'
 @allure.suite('Trello API Regression - Python Requests with Pytest and Allure reports')
 @pytest.mark.TC000
 class TestTrelloRegressionAPI(BaseTest):
-
     @allure.title('Create a board')
     @pytest.mark.TC001
     def test_create_board(self):

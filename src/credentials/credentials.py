@@ -4,9 +4,9 @@ from dotenv import load_dotenv
 class Credentials:
     load_dotenv()
     def key(self):
-        APIKey = os.environ.get('APIKEY')
-        return APIKey
+        APIKEY = os.environ.get('APIKEY')
+        return APIKEY
 
     def token(self):
-        APIToken = os.environ.get('APITOKEN')
-        return APIToken
+        APITOKEN = os.environ.get('APITOKEN')
+        return APITOKEN
