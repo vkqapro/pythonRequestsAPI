@@ -25,7 +25,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           npm install -g allure-commandline --save-dev
-          playwright install
 
       - name: Run tests
         env:
