@@ -32,21 +32,21 @@ jobs:
           APITOKEN: ${{ secrets.APITOKEN }}
 #          SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: |
-          pytest -m TC001 --alluredir allure-results
+          pytest -m TC000 --alluredir allure-results
         continue-on-error: true
 
-#      - name: Copy history from gh-pages to Allure-results
-#        run: |
-#          sudo mkdir -p allure-results/history
-#          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+      - name: Copy history from gh-pages to Allure-results
+        run: |
+          sudo mkdir -p allure-results/history
+          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
 
       - name: Generate Allure-report
         run:
           allure generate allure-results --clean -o allure-report
-#
-#      - name: Update Allure-report history folder
-#        run: |
-#          sudo cp -R allure-report/history/* ./.github/gh-pages/history/
+
+      - name: Update Allure-report history folder
+        run: |
+          sudo cp -R allure-report/history/* ./.github/gh-pages/history/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
