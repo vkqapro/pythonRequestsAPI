@@ -13,5 +13,5 @@ python-dotenv==1.0.1
 requests==2.32.3
 requests-oauthlib==2.0.0
 setuptools==75.8.0
--e git+https://github.com/vkqapro/pythonRequestsAPI.git@901d8710d97141f74c6bbb05b7e2de685f4f1cf6#egg=Trello_API_Regression
+#-e git+https://github.com/vkqapro/pythonRequestsAPI.git@901d8710d97141f74c6bbb05b7e2de685f4f1cf6#egg=Trello_API_Regression
 urllib3==2.3.0

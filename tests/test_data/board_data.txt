@@ -1,7 +1,7 @@
 {
-    "list_id": "679e8afe4942c95a60716072",
-    "board_id": "679e8afe5cf3dc64d727a97d",
+    "list_id": "679e8dba5956864ef09119e2",
+    "board_id": "679e8db92e6d4fe6139d1c9a",
     "list_name": "NewAPIList",
-    "card_id": "679e8aff0eed1ab01f74a6dd",
-    "list_2_id": "679e8aff6c8febdc263dc08d"
+    "card_id": "679e8dba18b91c9656d01acd",
+    "list_2_id": "679e8dbae674135d2e0d937a"
 }
