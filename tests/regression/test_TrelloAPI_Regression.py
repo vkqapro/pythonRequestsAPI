@@ -171,20 +171,20 @@ class TestTrelloRegressionAPI(BaseTest):
             endpoint=f"{endpoint_cards}/{board_data['card_id']}",
             query=query_card_deletion
         )
-    # @pytest.mark.TC007
-    # def test_delete_board(self):
-    #     with open(board_data_root, 'r') as f:
-    #         board_data = json.loads(f.read())
-    #     query = {
-    #         'key': self.CREDENTIALS.key(),
-    #         'token': self.CREDENTIALS.token()
-    #     }
-    #     response = self.API_CALL.DELETE(
-    #         base_url=base_url,
-    #         endpoint=f"{endpoint_boards}/{board_data['board_id']}",
-    #         query=query
-    #     )
-    #     log.info(response.status_code)
+    @pytest.mark.TC007
+    def test_delete_board(self):
+        with open(board_data_root, 'r') as f:
+            board_data = json.loads(f.read())
+        query = {
+            'key': self.CREDENTIALS.key(),
+            'token': self.CREDENTIALS.token()
+        }
+        response = self.API_CALL.DELETE(
+            base_url=base_url,
+            endpoint=f"{endpoint_boards}/{board_data['board_id']}",
+            query=query
+        )
+        log.info(response.status_code)
 
 
 
