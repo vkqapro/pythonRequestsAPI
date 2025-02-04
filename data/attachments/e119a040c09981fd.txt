@@ -1,6 +1,6 @@
 DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.trello.com:443
 DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "POST /1/boards?name=NewBoardAPI&key=9b59788d895cb44befa2d41d42185d11&token=ATTA50f6a67b4c4c8c1361899f7ed4a6809aa1df8ebfdaf89958126a5faaab09a89563020AE5 HTTP/1.1" 200 1630
 INFO     root:test_TrelloAPI_Regression.py:35 ==================================================
-INFO     root:test_TrelloAPI_Regression.py:36 67a25d8e229667835979d53e
+INFO     root:test_TrelloAPI_Regression.py:36 67a2856e1ec391ef2a1e3c94
 DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.trello.com:443
-DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "GET /1/boards/67a25d8e229667835979d53e?key=9b59788d895cb44befa2d41d42185d11&token=ATTA50f6a67b4c4c8c1361899f7ed4a6809aa1df8ebfdaf89958126a5faaab09a89563020AE5 HTTP/1.1" 200 1618
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "GET /1/boards/67a2856e1ec391ef2a1e3c94?key=9b59788d895cb44befa2d41d42185d11&token=ATTA50f6a67b4c4c8c1361899f7ed4a6809aa1df8ebfdaf89958126a5faaab09a89563020AE5 HTTP/1.1" 200 1618
