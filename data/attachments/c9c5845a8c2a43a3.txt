@@ -1,0 +1,2 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.trello.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "POST /1/cards/67c7f0ea4ef380447be706f8/labels?color=green&title=New+label&key=9b59788d895cb44befa2d41d42185d11&token=ATTA50f6a67b4c4c8c1361899f7ed4a6809aa1df8ebfdaf89958126a5faaab09a89563020AE5 HTTP/1.1" 200 117
