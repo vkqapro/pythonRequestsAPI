@@ -1,0 +1,3 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): api.trello.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://api.trello.com:443 "POST /1/boards/67f3493ef2bec4c07e70da54/lists?name=NewAPIList&key=9b59788d895cb44befa2d41d42185d11&token=ATTA50f6a67b4c4c8c1361899f7ed4a6809aa1df8ebfdaf89958126a5faaab09a89563020AE5 HTTP/1.1" 200 183
+INFO     root:test_TrelloAPI_Regression.py:79 {'id': '67f3493f1d75f1af2f6634d8', 'name': 'NewAPIList', 'closed': False, 'color': None, 'idBoard': '67f3493ef2bec4c07e70da54', 'pos': 8192, 'type': None, 'datasource': {'filter': False}, 'limits': {}}
