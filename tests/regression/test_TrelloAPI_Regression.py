@@ -50,6 +50,8 @@ class TestTrelloRegressionAPI(BaseTest):
         )
         result = result.json()
         assert result["id"] == self.new_board_id
+
+    @allure.title('Create a list')
     @pytest.mark.TC002
     def test_create_list(self):
         new_list_name = 'NewAPIList'
@@ -77,6 +79,8 @@ class TestTrelloRegressionAPI(BaseTest):
             json.dump(data, f, indent=4)
 
         log.info(board_data)
+
+    @allure.title('Create a card')
     @pytest.mark.TC003
     def test_card_creation(self):
         with open(board_data_root, "r") as f:
@@ -99,6 +103,7 @@ class TestTrelloRegressionAPI(BaseTest):
         with open(board_data_root, 'w') as file:
             json.dump(data, file, indent=4)
 
+    @allure.title('Drag a card from one list to another list')
     @pytest.mark.TC004
     def test_drag_drop_card(self):
         new_list_name = 'NewAPIList_2'
@@ -141,6 +146,8 @@ class TestTrelloRegressionAPI(BaseTest):
             query=query_3
         )
         log.info(response.json())
+
+    @allure.title('Add "GREEN" label to the card')
     @pytest.mark.TC005
     def test_add_label_to_card(self):
         with open(board_data_root, 'r') as f:
@@ -157,6 +164,8 @@ class TestTrelloRegressionAPI(BaseTest):
             endpoint=f"{endpoint_cards}/{board_data['card_id']}/labels",
             query=query_post_new_label
         )
+
+    @allure.title('Archive the card')
     @pytest.mark.TC006
     def test_archive_card(self):
         with open(board_data_root, 'r') as file:
@@ -171,6 +180,8 @@ class TestTrelloRegressionAPI(BaseTest):
             endpoint=f"{endpoint_cards}/{board_data['card_id']}",
             query=query_card_deletion
         )
+
+    @allure.title('Delete the board')
     @pytest.mark.TC007
     def test_delete_board(self):
         with open(board_data_root, 'r') as f:
