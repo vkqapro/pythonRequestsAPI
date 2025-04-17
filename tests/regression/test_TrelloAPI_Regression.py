@@ -32,9 +32,6 @@ class TestTrelloRegressionAPI(BaseTest):
         )
         result = result.json()
         self.new_board_id = result['id']
-        log.info("=" * 50)
-        log.info(self.new_board_id)
-
         with open(board_data_root, 'w') as file:
             file.write(self.new_board_id)
 
@@ -78,7 +75,6 @@ class TestTrelloRegressionAPI(BaseTest):
         with open(board_data_root, 'w') as f:
             json.dump(data, f, indent=4)
 
-        log.info(board_data)
 
     @allure.title('Create a card')
     @pytest.mark.TC003
@@ -145,7 +141,6 @@ class TestTrelloRegressionAPI(BaseTest):
             endpoint=f"{endpoint_cards}/{drag_n_drop_data['card_id']}",
             query=query_3
         )
-        log.info(response.json())
 
     @allure.title('Add "GREEN" label to the card')
     @pytest.mark.TC005
@@ -195,7 +190,6 @@ class TestTrelloRegressionAPI(BaseTest):
             endpoint=f"{endpoint_boards}/{board_data['board_id']}",
             query=query
         )
-        log.info(response.status_code)
 
 
 
